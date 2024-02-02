@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body id="body">
+    <div class="header">
+        <div class="logo">
+            <img src="img/IMG_0982 (1).jpg" width="65px" height="65px" alt="Personal foto">
+        </div>
+        <div class="nav-container">
+            <nav>
+                <ul>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#educacion">Educación</a></li>
+                    <li><a href="#titulaciones">Titulaciones</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <button onclick="changeColor()" class="boton">Light/Dark</button>
+            <script>
+                function changeColor() {
+
+                    let body = document.getElementById("body");
+                    let header = document.querySelector(".header");
+                    let card1 = document.querySelectorAll(".card");
+                    let card2 = document.querySelectorAll(".card-2");
+                    let boton = document.querySelector(".boton")
+                    let lista = document.getElementById(".header nav ul li:hover")
+                    
+                    body.classList.toggle('noche-body');
+                    header.classList.toggle('noche-header');
+                    card1[0].classList.toggle('noche-bordes');
+                    card1[1].classList.toggle('noche-bordes');
+                    card2[0].classList.toggle('noche-bordes');
+                    card2[1].classList.toggle('noche-bordes');
+                    card2[2].classList.toggle('noche-bordes');
+                    card2[3].classList.toggle('noche-bordes');
+                    card2[4].classList.toggle('noche-bordes');
+                    boton.classList.toggle('noche-boton')
+                    lista.classList.toggle('noche-header nav ul li:hover')
+
+                }
+            </script>
+        </div>
+    </div>
+
+    <div id="content">
+
+        <div class="sobre-mi" id="sobre-mi"> 
+            <h2><u>Sobre mí</u></h2>
+            <p>Mi nombre es <b>Arturo Campos Rufo</b>, tengo 17 años y soy un aficionado a la informática, en especial a la programación. Me considero una persona que tiene una buena comunicación, gestión de equipos y resolución de problemas. Mi idioma nativo es el español y tengo un nivel básico de inglés. Mis habilidades actuales son la programación web (frontend) y la administración de servicios en red.</p>
+        </div>
+
+        <div class="educacion" id="educacion">
+            <h2><u>Educación</u></h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>ESO (Educación Secundaria Obligatoria)</h3>
+                    <p>-Duración: 2018-2022</p>
+                </div>
+                <div class="card">
+                    <h3>Grado Medio (Informática y Comunicaciones)</h3>
+                    <p>-Técnico en Sistemas Microinformáticos y Redes (en curso)</p>
+                    <p>-Duración: 2022-2024</p>
+                </div>
+            </div>
+            <p>*Visión de estudio superior</p>
+        </div>
+
+        <div class="titulaciones" id="titulaciones">
+            <h2><u>Titulaciones</u></h2>
+            <div class="card-container-2">
+                <div class="card-2">
+                    <h3>Cisco Networking Academy</h3>
+                    <p>-CCNA: Introducción a Redes</p>
+                    <p>-2022</p>
+                </div>
+                <div class="card-2">
+                    <h3>Curso de Responsive Web Design</h3>
+                    <p>-Emitido por <a href="https://openwebinars.net/cert/haQY" target="_blank">OpenWebinars</a></p>
+                    <p>-2023</p>
+                </div>
+                <div class="card-2">
+                    <h3>Onboarding Ciberseguridad</h3>
+                    <p>-Emitido por <a href="https://openwebinars.net/cert/8Pmo" target="_blank">OpenWebinars</a></p>
+                    <p>-2023</p>
+                </div>
+                <div class="card-2">
+                    <h3>B1 Cambridge</h3>
+                    <p>-Titulación de Inglés</p>
+                    <p>-En curso</p>
+                </div>
+                <div class="card-2">
+                    <h3>HTML5 y CSS</h3>
+                    <p>-Emitido por <a href="https://openwebinars.net/cert/Bv9J" target="_blank">OpenWebinars</a></p>
+                    <p>-2023</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contacto" id="contacto">
+            <h2><u>Contacto</u></h2>
+            <div class="mail">
+                <p><img src="img/mail.png" alt=""> arturocamposrufo13@gmail.com</p>
+            </div>
+            <div class="phone">
+                <p><img src="img/call.png" alt=""> 663 91 86 36</p>
+            </div>
+            <div class="lnkedin">
+                <p><img src="img/linkedin.png" alt=""><a href="https://www.linkedin.com/in/arturo-campos-rufo-643a472a5/" target="_blank">Linkedin personal</a></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
